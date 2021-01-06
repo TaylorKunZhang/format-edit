@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPhone1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:hint="@string/hint_phone1"
+        android:inputType="number"
+        android:textSize="@dimen/text_size" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPhone2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:hint="@string/hint_phone2"
+        android:inputType="number"
+        android:textSize="@dimen/text_size" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etIDNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:digits="@string/digits_id_number"
+        android:hint="@string/hint_id_number"
+        android:textSize="@dimen/text_size" />
+
+</LinearLayout>

@@ -1,0 +1,3 @@
+rootProject.name = "format-edit"
+include ':format-edit'
+include ':sample'

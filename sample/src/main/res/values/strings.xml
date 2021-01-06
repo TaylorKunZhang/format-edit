@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FormatEditSample</string>
+
+    <string name="digits_id_number">0123456789xX</string>
+
+    <string name="hint_phone1">phone, format is \' \'</string>
+    <string name="hint_phone2">phone, format is \'-\'</string>
+    <string name="hint_id_number">ID number, format is \' \'</string>
+</resources>

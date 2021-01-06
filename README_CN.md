@@ -1,15 +1,15 @@
-English | [简体中文](./README_CN.md)
+[English](./README.md) | 简体中文
 
 # FormatEdit
 
-An easy to use format edit library for Android. 
+一个易于使用的 Android 格式化编辑库。
 
 [![Download](https://api.bintray.com/packages/taylorzhang/maven/format-edit/images/download.svg?style=flat)](https://bintray.com/taylorzhang/maven/format-edit/)
 [![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
 [![License](https://img.shields.io/badge/License-Apache--2.0-brightgreen.svg?style=flat)](LICENSE)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-## Download
+## 下载
 
 ```groovy
 dependencies {
@@ -17,11 +17,11 @@ dependencies {
 }
 ```
 
-## Usage
+## 使用
 
-### Format edit phone
+### 格式化编辑手机号
 
-layout：
+布局：
 
 ```xml
 <androidx.appcompat.widget.AppCompatEditText
@@ -31,7 +31,7 @@ layout：
     android:inputType="number" />
 ```
 
-kotlin:
+代码:
 
 ```kotlin
 // format is ' '
@@ -43,9 +43,9 @@ etPhone.setFormatRules(3, 4, 4, formatChar = '-')
 
 <img width="300"  src="screenshots/format_edit_phone.gif"/>
 
-### Format edit ID number
+### 格式化编辑身份证号
 
-layout:
+布局:
 
 ```xml
 <androidx.appcompat.widget.AppCompatEditText
@@ -55,13 +55,13 @@ layout:
     android:digits="@string/digits_id_number"/>
 ```
 
-resources:
+资源:
 
 ```xml
 <string name="digits_id_number">0123456789xX</string>
 ```
 
-kotlin:
+代码:
 
 ```kotlin
 etIDNumber.setFormatRules(6, 4, 4, 4)
@@ -69,23 +69,23 @@ etIDNumber.setFormatRules(6, 4, 4, 4)
 
 <img width="300"  src="screenshots/format_edit_id_number.gif"/>
 
-### Set listener
+### 设置监听
 
 ```kotlin
 etPhone.setOnFormatEditListener { isComplete, text ->
-    if (isComplete) { // edit complete
-        // toast current text with format removed.
+    if (isComplete) { // 编辑完成
+        // 使用 toast 显示移除格式化的文本
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
     }
 }
 ```
 
-### Text with format removed
+### 移除格式化的文本
 
 ```kotlin
 etPhone.textWithFormatRemoved
 ```
 
-## License
+## 许可证
 
 [Apache license 2.0](LICENSE) © Taylor Zhang
