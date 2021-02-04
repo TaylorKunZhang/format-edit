@@ -13,7 +13,7 @@ An easy to use format edit library for Android.
 
 ```groovy
 dependencies {
-    implementation 'cc.taylorzhang:format-edit:1.0.0'
+    implementation 'cc.taylorzhang:format-edit:1.1.0'
 }
 ```
 

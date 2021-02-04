@@ -13,7 +13,7 @@
 
 ```groovy
 dependencies {
-    implementation 'cc.taylorzhang:format-edit:1.0.0'
+    implementation 'cc.taylorzhang:format-edit:1.1.0'
 }
 ```
 
