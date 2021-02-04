@@ -18,7 +18,7 @@ internal class FormatTextWatcher(
 
     var formatChar: Char = ' '
 
-    val spaceIndexList = ArrayList<Int>()
+    val formatCharIndexList = ArrayList<Int>()
 
     var maxLength = 0
 
@@ -33,19 +33,19 @@ internal class FormatTextWatcher(
         if (value.isEmpty()) return
 
         if (value.last() == formatChar) {
-            deleteSpace(s, value.lastIndex)
+            deleteChar(s, value.lastIndex)
             return
         }
 
         value.forEachIndexed { index, c ->
-            if (spaceIndexList.find { it == index } != null) {
+            if (formatCharIndexList.contains(index)) {
                 if (c != formatChar) {
-                    insertSpace(s, index)
+                    insertFormatChar(s, index)
                     return
                 }
             } else {
                 if (c == formatChar) {
-                    deleteSpace(s, index)
+                    deleteChar(s, index)
                     return
                 }
             }
@@ -57,7 +57,7 @@ internal class FormatTextWatcher(
         )
     }
 
-    private fun insertSpace(s: Editable, index: Int) {
+    private fun insertFormatChar(s: Editable, index: Int) {
         val filters = s.filters
         s.filters = emptyArray()
         s.insert(index, formatChar.toString())
@@ -65,7 +65,7 @@ internal class FormatTextWatcher(
         updateSelectionPosition(s)
     }
 
-    private fun deleteSpace(s: Editable, index: Int) {
+    private fun deleteChar(s: Editable, index: Int) {
         s.delete(index, index + 1)
         updateSelectionPosition(s)
     }

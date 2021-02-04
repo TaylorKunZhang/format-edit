@@ -76,8 +76,8 @@ private fun setFormatTextWatcher(
     }
 
     watcher.formatChar = formatChar
-    watcher.spaceIndexList.clear()
-    watcher.spaceIndexList.addAll(list)
+    watcher.formatCharIndexList.clear()
+    watcher.formatCharIndexList.addAll(list)
     watcher.maxLength = maxLength
 }
 
