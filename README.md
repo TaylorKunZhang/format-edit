@@ -41,7 +41,7 @@ etPhone.setFormatRules(3, 4, 4)
 etPhone.setFormatRules(3, 4, 4, formatChar = '-')
 ```
 
-<img width="300"  src="screenshots/format_edit_phone.gif"/>
+![](screenshots/format_edit_phone.gif)
 
 ### Format edit ID number
 
@@ -67,7 +67,7 @@ kotlin:
 etIDNumber.setFormatRules(6, 4, 4, 4)
 ```
 
-<img width="300"  src="screenshots/format_edit_id_number.gif"/>
+![](screenshots/format_edit_id_number.gif)
 
 ### Set listener
 
