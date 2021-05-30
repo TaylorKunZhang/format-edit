@@ -4,14 +4,17 @@
 
 一个易于使用的 Android 格式化编辑库。
 
-[![Download](https://api.bintray.com/packages/taylorzhang/maven/format-edit/images/download.svg?style=flat)](https://bintray.com/taylorzhang/maven/format-edit/)
+[![Maven Central](https://img.shields.io/maven-central/v/cc.taylorzhang/format-edit.svg?style=flat)](https://search.maven.org/artifact/cc.taylorzhang/format-edit)
 [![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
 [![License](https://img.shields.io/badge/License-Apache--2.0-brightgreen.svg?style=flat)](LICENSE)
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 ## 下载
 
 ```groovy
+repositories {
+    mavenCentral()
+}
+
 dependencies {
     implementation 'cc.taylorzhang:format-edit:1.1.0'
 }
